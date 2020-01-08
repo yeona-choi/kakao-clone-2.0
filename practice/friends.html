@@ -1,4 +1,4 @@
-<!-- 친구 목록 -->
+<!-- 친구목록화면 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,35 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Friend | Kakao Clone</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Friends | Kakao Clone</title>
 </head>
 
 <body>
-    <!-- status-bar -->
     <div class="status-bar">
         <div class="status-bar__column">
-            <span class="status-bar__clock" id="status-bar__clock">
-                <script type="text/javascript">
-                    const time = new Date();
-                    const hours = time.getHours();
-                    const minutes = time.getMinutes();
-                    const CurrentTime = document.getElementById("status-bar__clock");
-                    CurrentTime.innerHTML = `${hours < 10 ? `0${hours}` : hours} : ${minutes < 10 ? `0${minutes}` : minutes}`;
-                </script>
-            </span>
+            <span class="status-bar__column">13:53</span>
         </div>
         <div class="status-bar__column">
             <i class="fas fa-clock"></i>
             <i class="fas fa-volume-mute"></i>
             <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">98%</span>
-            <i class="fas fa-battery-full"></i>
+            <span class="status__battery-level">88%</span>
+            <i class="fas fa-battery-three-quarters"></i>
         </div>
     </div>
 
-    <!-- header -->
     <header class="header">
         <div class="header__header-column">
             <h1 class="header__title">Friends</h1>
@@ -44,39 +34,31 @@
                 <i class="fas fa-search"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-user-plus"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-music"></i>
-            </span>
-            <span class="header__icon">
                 <i class="fas fa-cog"></i>
             </span>
         </div>
     </header>
-
-    <!-- Main of friends  -->
     <main class="friends">
         <header class="friends__header">
             <div class="friends__friend friend">
                 <div class="friend__column">
-                    <img class="g-avatar friend__avatar " src="images/ya.jpg" />
+                    <img src="images/myHusband.jpg" alt="" class="g-avatar friend_avatar" width="170" height="180" />
                     <div class="friend__content">
                         <span class="friend__name">
-                            여나
+                            Jack
                         </span>
                         <span class="friend__status">
-                            오예아
+                            Love YA. I'm happy. YA's all about me.
                         </span>
                     </div>
                 </div>
             </div>
         </header>
         <div class="friends__plus">
-            <h5 class="friends__titile">Plus Friend</h5>
-            <div class="friends__friend friend">
+            <h5 class="friends__title">Plus Friend</h5>
+            <div class="friends__friend friend friend">
                 <div class="friend__column">
-                    <img class="friend__avatar" src="images/pf.jpg" />
+                    <img src="images/plus.jpg" alt="" class="friend_avatar" width="160" height="160" />
                     <div class="friend__content">
                         <span class="friend__name">
                             Plus Friend
@@ -86,23 +68,23 @@
             </div>
         </div>
         <ul class="friends__list">
-            <h5 class="friends__title">Friends 291</h5>
+            <h5 class="friends__title">Friends 14</h5>
             <li class="friends__friend friend friend--lg">
                 <div class="friend__column">
-                    <img class="friend__avatar" src="images/m.jpg" />
+                    <img src="images/smail.jpg" alt="" class="friend_avatar" width="160" height="160" />
                     <div class="friend__content">
                         <span class="friend__name">
-                            비너스마미
+                            Ari
                         </span>
                         <span class="friend__status">
-                            ★
+                            I'm a smile boy
                         </span>
                     </div>
                 </div>
                 <div class="friend__column">
                     <div class="friend__now-listening">
                         <span>
-                            지독하게 - FTISLAND
+                            FTISLAND (FT NomadCoders)
                             <i class="fas fa-play"></i>
                         </span>
                     </div>
@@ -110,27 +92,31 @@
             </li>
         </ul>
 
-
-
-
     </main>
-
-    <!-- navigation -->
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="friends.html" class="nav__list-link"><i class="fas fa-user"></i></a>
+            <li class="nav__list-item">
+                <a href="friends.html" class="nav__list-link">
+                    <i class="fas fa-user"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="index.html" class="nav__list-link"><i class="far fa-comment"></i></a>
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="far fa-comment"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="find.html" class="nav__list-link"><i class="fas fa-search"></i></a>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h"></i></a>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
             </li>
         </ul>
     </nav>
-    <div class="bigScreen">
-        <span class="bigScreen__text">Please make your screen small!</span>
-    </div>
 </body>
 
 </html>

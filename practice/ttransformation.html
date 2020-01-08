@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trasnformation</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            /* transform: rotate(20deg); */
+            transition: all 2s ease-in-out;
+            border-top: red 3px solid;
+            animation: 3s sacleAndRotateSquare infinite ease-in-out;
+            font-size: 100px;
+
+        }
+
+        /* .box:hover {
+            transform: rotate(1turn) scale(.5, .5);
+        } */
+
+        @keyframes sacleAndRotateSquare {
+            from {
+                transform: none;
+            }
+
+            50% {
+                transform: rotate(1turn) scale(.5, .5);
+                color: thistle;
+            }
+
+            100% {
+                transform: none;
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box">Wow~</div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.header-wrapper{
+    background-color: white;
+    
+}
+
+.chats_body{
+    padding: 0;
+}
+
+.chats_body .header,
+.chats_body .status-bar{
+    padding: 0px 20px;
+}
+
+.chat-screen{
+    min-height: 100vh;
+    background-image: url("../images/chatBg.png");
+}
+.chat__write {
+    position: fixed;
+    bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fcfcfc;
+    padding: 0px  20px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
+
+
+.chat__write i {
+    font-size: 22px;;
+}
+
+.chat_write-column  :nth-child(2) {
+    width:80%;
+}
+
+.chat_write-column  input {
+    padding :20px 10px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+
+.chat_write-column  input:focus {
+   outline: none;
+}
+
+.chat-screen .chat__messages{
+    border-top: 1px solid #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp{
+    background-color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow:  rgba(0,0,0,0.3) 0px 8px 16px -8px,
+    rgba(0,0,0,0.24) 0px -6px 16px 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.chat-screen .incoming-message {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.message .message__content{
+    width: 80%;
+}
+
+.incoming-message img{
+    width: 30px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+
+.message__buble{
+    background-color: white;
+    box-shadow:  rgba(0,0,0,0.3) 0px 8px 16px -8px,
+    rgba(0,0,0,0.24) 0px -6px 16px 6px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.sent-message{
+    align-self: flex-end;
+    border-bottom-right-radius: 0px;
+}
+
+.message__content .message__author{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
